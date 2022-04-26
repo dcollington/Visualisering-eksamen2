@@ -12,6 +12,8 @@ const labels = [
   'Ishavsveien'
 ];
 
+
+
 //Datasett for 2 biler med sommer- og vinterpriser
 const data = {
   labels: labels,
@@ -52,6 +54,7 @@ const data = {
   borderSkipped: false,
   hidden: true,
 }]
+
 };
 
 
@@ -82,10 +85,13 @@ const config = {
             bottom: 50
             
           }
-         
         }
-        
-      }
+      },
+      layout:{
+        padding: 200
+      },
+      hoverBorderWidth:2,
+      hoverBorderColor:'#777'
       
     }
   
