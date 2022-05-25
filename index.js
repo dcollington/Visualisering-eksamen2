@@ -19,7 +19,7 @@ const data = {
   labels: labels,
   datasets: [{
     label: 'Hyundai Kona Sommer',
-    backgroundColor: '#565F65',
+    backgroundColor: '#1C3D52',
     data: [255, 150, 246, 235, 157, 220, 220, 179, 190],
     borderWidth: 2,
     borderRadius: 5,
@@ -28,7 +28,7 @@ const data = {
 
   {
     label: 'Hyundai Kona Vinter',
-    backgroundColor: '#C0C2CA',
+    backgroundColor: '#3E849E',
     data: [255, 225, 342, 258, 235, 248, 248, 269, 286],
     borderWidth: 2,
     borderRadius: 5,
@@ -64,6 +64,14 @@ const config = {
   data: data,
   options: {
     plugins: {
+      tooltip:{
+        callbacks:{
+          afterBody: function(context){
+            return 'kr';
+          }
+        }
+
+      },
       title: {
         display: true,
         text: 'Hva koster det å lade elbilen?',
