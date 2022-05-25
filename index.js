@@ -88,7 +88,7 @@ const config = {
         }
       },
       layout:{
-        padding: 200
+        padding: 100
       },
       hoverBorderWidth:2,
       hoverBorderColor:'#777'
